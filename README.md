@@ -35,7 +35,7 @@ The [log.md](https://github.com/Staxed/30Days30Sites-Main/blob/master/log.md) fi
 It's ok.  There is no better way to learn than by doing.  The emails you receive will contain resources and tutorials that should give you some pointers.  You can also join the [Facebook Group](https://www.facebook.com/groups/30days30sites) and ask questions and get advice.
 
 ### **Where can I learn?**
-While this challenge provides prompts and a link to a new resource each day, we know that there are many more resources out there.  We can't provide a link to every single one since we don't know about them.  But the ones that we do know about and can recommend are listed in the resources.md file of this repository.
+While this challenge provides prompts and a link to a new resource each day, we know that there are many more resources out there.  We can't provide a link to every single one since we don't know about them.  But the ones that we do know about and can recommend are listed in the [resources.md](https://github.com/Staxed/30Days30Sites-Main/blob/master/resources.md) file of this repository.
 
 *If you find anything you find useful on your journey, please feel free to submit a pull request or contact me (info at bottom) to get new resources added here.*
 
@@ -45,11 +45,11 @@ That's ok too, it happens.  The key here is to remember why you are doing this. 
 You can skip the day you missed completely, or tack it on to the end.  The end result is you learning something new and building your portfolio up through this challenge.  Just focus on that!
 
 ### **Where can I host my code?**
-You can host your code whereever you want, but we recommend either Github or Codepen.
+You can host your code whereever you want, but we recommend either [Github](https://github.com) or [Codepen](https://codepen.io).
 
-With Codepen, it is a self contained coding area where you can writing your code and view the results through the same browser application.  It's simple to use and simple to share with others when you are done.
+With Codepen, it is a self contained coding area where you can write your code and view the results through the same browser application.  It's simple to use and simple to share with others when you are done.
 
-If you want a more personalized solution you can opt for Github.  Either create your own portfolio repository *(and we'd suggest setting up [GitHub Pages](https://pages.github.com/) with it!)* or use this one (after you have forked it of course).
+If you want a more personalized solution you can opt for Github.  Either create your own portfolio repository *(and we'd suggest setting up [GitHub Pages](https://pages.github.com/) with it!)* or use this one (af*ter you have forked it of course)*.
 
 We recommend making a new folder for each day, but since it's your challenge...you do it how you want!
 
