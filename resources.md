@@ -37,6 +37,8 @@ Feel free to submit a pull request or contact me if you have resources you would
 
 ## Other Stuff
 [Creative Market Free Goods](https://creativemarket.com/free-goods)
+[100 Color Combinations](https://designschool.canva.com/blog/100-color-combinations)  
+[CSS Grid by Example](https://gridbyexample.com)
 
 ## Learning
 [w3schools](https://www.w3schools.com/tags/tag_code.asp) **Excellent Resource*  
