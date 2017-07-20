@@ -23,6 +23,10 @@ Feel free to submit a pull request or contact me if you have resources you would
 [Pexels](https://www.pexels.com)  
 [TheStocks](http://thestocks.im)  
 [Web Designer Depot](https://www.webdesignerdepot.com/category/freebies)  
+[Stock Snap](https://stocksnap.io)  
+[Pixabay](https://pixabay.com)  
+[Burst](https://burst.shopify.com)  
+[Cupcake](http://cupcake.nilssonlee.se)  
 
 ## Font Stuff
 [Fontello](http://fontello.com)  
@@ -30,6 +34,7 @@ Feel free to submit a pull request or contact me if you have resources you would
 [Font Awesome](http://fontawesome.io)  
 [Font Pair](http://fontpair.co)  
 [TypeWolf](https://www.typewolf.com/site-of-the-day/fonts/circular)  
+
 ## Other Stuff
 [Creative Market Free Goods](https://creativemarket.com/free-goods)
 
