@@ -13,7 +13,7 @@
    </head>
 
 <body>
-   <div class = "wedding">
+   <div class = "parallax text-white">
         <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,10 +43,44 @@
                 <div class="jumbotron">
                 <p>When <br> <br> Sep 1, 2023 at 7:00pm IDT</p><br> <br> <br>
                 <p> Where <br> <br> 500 Terry A Francois Blvd, <br>San Francisco, CA 94158, USA</p><br>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">RSVP</a></p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#rsvp">RSVP</a></p>
                 </div>
    </div>
    </div>
+<!-- Modal -->
+            <div id="rsvp" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Yes, I'll be there</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="first">First Name:</label>
+                            <input type="text" class="form-control" id="first">
+                        </div>
+                        <div class="form-group">
+                            <label for="last">Last Name:</label>
+                            <input type="text" class="form-control" id="last">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+
+            </div>
+            </div>
    <footer>
        &copy; Design by Pankajashree. Background Photo by Bryan Minear on Unsplash
    </footer>

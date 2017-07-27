@@ -84,27 +84,12 @@ footer{
     font-family: 'Dancing Script', cursive;
     font-weight: 900;
 }
-.wedding .jumbotron{
+.jumbotron{
     color: black;
-     /* The image used */
-    background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(0,0,0,0.5), 
-      rgba(0,0,0,0.5)
-    ),
-    /* bg image */
-    url("img_parallax.jpg");
-    opacity: 0.7;
-    /* Set a specific height */
-    height: 110%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .text-white{
     color: white;
+}
+.modal{
+    z-index: 3;
 }
