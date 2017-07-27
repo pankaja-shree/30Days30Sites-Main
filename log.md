@@ -11,3 +11,9 @@ Today **I did**:  Portfolio site
 **I learned:**  Material Design
 **Link:** *insert link to todays work here*
 
+### **Day 2:** 25.07.2015
+Today **I did**:  Events page
+**I learned:**  Parallax effect for background images, background image overlays.
+**Link:** *insert link to todays work here*
+
+
