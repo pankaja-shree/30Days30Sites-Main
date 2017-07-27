@@ -6,24 +6,13 @@ html, body{
     background-image: url("img_parallax.jpg");
     opacity: 0.8;
     /* Set a specific height */
-    height: 100%; 
+    height: 150%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-&:before {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-	opacity: .6; 
-  }
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
@@ -46,4 +35,15 @@ footer{
     background: black;
     color:white;
     text-align: center;
+}
+.navbar-inverse{
+    color: white;
+    text-decoration: none;
+}
+.small{
+    font-size: 2em;
+}
+.big{
+    font-size: 4em;
+    text-transform: uppercase;
 }
