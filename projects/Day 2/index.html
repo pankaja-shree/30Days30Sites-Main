@@ -32,7 +32,7 @@
                 <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
                 <li><a href="story.html">Our Story</a></li>
                 <li><a href="wedding.html">The Wedding</a></li>
-                <li><a href="#">RSVP</a></li>
+                <li><a href="#" onclick="openNav()">RSVP</a></li>
             </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -43,10 +43,26 @@
             <h3 class = "small">-- Bella and Brown --</h3>
             <h1 class="big">We're engaged </h1><br>
             <p>Sep 1, 2023 | 500 Terry A Francois Blvd</p><br>
-            <button class = "btn btn-secondary small">RSVP</button>
+            <button class = "btn btn-secondary small" onclick="openNav()">RSVP</button>
         </div>
     
    </div>
+    <!-- Side Drawer -->
+   <div id="rsvp" class="sidenav container">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="first" placeholder="First Name...">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="last" placeholder="Last Name...">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email...">
+                </div>
+                <button type="submit" class="btn btn-success">Yes, I'm coming</button>
+            </form>
+    </div>
    <footer>
         &copy; Design by Pankajashree. Background Photo by Bryan Minear on Unsplash
    </footer>
@@ -55,6 +71,18 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    /* Set the width of the side navigation to 250px */
+    document.getElementById("rsvp").style.width = "0px";
+function openNav() {
+    document.getElementById("rsvp").style.width = "350px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("rsvp").style.width = "0";
+}
+</script>
 </body>
 
 </html>
