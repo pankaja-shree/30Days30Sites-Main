@@ -15,7 +15,7 @@ html, body{
     background-size: cover;
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 600px) {
     .parallax {
         background-attachment: scroll;
     }
@@ -36,7 +36,11 @@ footer{
     color:white;
     text-align: center;
 }
-.navbar-inverse{
+.navbar-inverse a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-inverse a:hover{
     color: white;
     text-decoration: none;
 }
