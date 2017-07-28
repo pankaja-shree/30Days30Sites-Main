@@ -11,7 +11,7 @@ html, body{
       rgba(0,0,0,0.5)
     ),
     /* bg image */
-    url("img_parallax.jpg");
+    url("img-parallax.jpg");
     opacity: 0.7;
     /* Set a specific height */
     height: 110%; 
@@ -123,12 +123,13 @@ footer{
     position: fixed; /* Stay in place */
     z-index: 4; /* Stay on top */
     top: 0;
-        right: 0;
-
+    right: 0;
+    display:none;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-transition: width .35s ease-in-out; /* Safari 3.1 to 6.0 */
+    transition: width .35s ease-in-out;
+    padding: 60px 3%;
 }
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {

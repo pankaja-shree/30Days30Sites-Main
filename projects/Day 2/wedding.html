@@ -43,15 +43,16 @@
                 <div class="jumbotron">
                 <p>When <br> <br> Sep 1, 2023 at 7:00pm IDT</p><br> <br> <br>
                 <p> Where <br> <br> 500 Terry A Francois Blvd, <br>San Francisco, CA 94158, USA</p><br>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button" onclick="openNav()">RSVP</a></p>
+                <p><a class="btn btn-success btn-lg" href="#" role="button" onclick="openNav()">RSVP</a></p>
                 </div>
    </div>
             
    </div>
 
    <!-- Side Drawer -->
-   <div id="rsvp" class="sidenav container">
+   <div id="rsvp" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class = "container col-md-12 text-center">
             <form>
                 <div class="form-group">
                     <input type="text" class="form-control" id="first" placeholder="First Name...">
@@ -64,6 +65,7 @@
                 </div>
                 <button type="submit" class="btn btn-success">Yes, I'm coming</button>
             </form>
+        </div>
     </div>
    <footer class = "font_style">
        &copy; Design by Pankajashree. Background Photo by Drew Coffman on Unsplash.
@@ -75,15 +77,17 @@
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 <script>
-    /* Set the width of the side navigation to 250px */
-    document.getElementById("rsvp").style.width = "0px";
+    /* Set the display of the side navigation to none initially */
+    document.getElementById("rsvp").style.display = "none";
 function openNav() {
-    document.getElementById("rsvp").style.width = "350px";
+    document.getElementById("rsvp").style.width = "40%";
+    document.getElementById("rsvp").style.display = "initial";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("rsvp").style.width = "0";
+    document.getElementById("rsvp").style.display = "none";
 }
 </script>
 </body>

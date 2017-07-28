@@ -41,9 +41,9 @@
         <div class = "container-fluid content">
             <br><br><br><br>
             <h3 class = "small">-- Bella and Brown --</h3>
-            <h1 class="big">We're engaged </h1><br>
+            <h1 class="big"><b>We're engaged </b></h1><br>
             <p>Sep 1, 2023 | 500 Terry A Francois Blvd</p><br>
-            <button class = "btn btn-secondary small" onclick="openNav()">RSVP</button>
+            <button class = "btn btn-secondary small text-primary" onclick="openNav()">RSVP</button>
         </div>
     
    </div>
@@ -64,23 +64,20 @@
             </form>
     </div>
    <footer class = "font_style">
-        &copy; Design by Pankajashree. Background Photo by Bryan Minear on Unsplash
+        &copy; Design by Pankajashree. Background Photo by Scott Webb on Unsplash.
    </footer>
-    <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-    /* Set the width of the side navigation to 250px */
-    document.getElementById("rsvp").style.width = "0px";
+    /* Set the display of the side navigation to none initially */
+    document.getElementById("rsvp").style.display = "none";
 function openNav() {
-    document.getElementById("rsvp").style.width = "350px";
+    document.getElementById("rsvp").style.width = "40%";
+    document.getElementById("rsvp").style.display = "initial";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("rsvp").style.width = "0";
+    document.getElementById("rsvp").style.display = "none";
 }
 </script>
 </body>
