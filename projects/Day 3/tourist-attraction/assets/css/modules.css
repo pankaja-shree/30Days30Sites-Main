@@ -72,7 +72,7 @@ header
     padding: 2.2222em 2em;
     /* 40px/18px - 36px/18px */
   }
-  .header__nav { width: 12em; }
+  .header__nav { width: 40em; }
   .header__nav a
   {
     font-size: 0.8333em;
