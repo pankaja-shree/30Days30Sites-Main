@@ -43,14 +43,15 @@
 	<meta name="msapplication-square150x150logo" content="assets/img/ms-icon-150x150.png">
 	<meta name="msapplication-square70x70logo" content="assets/img/ms-icon-70x70.png">
   <!-- CSS links -->
-  <link rel = "stylesheet" href = "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/base.css">
 	<link rel="stylesheet" href="assets/css/layout.css">
-	<link rel="stylesheet" href="assets/css/modules.css">
+  <link rel="stylesheet" href="assets/css/modules.css">
+  <link rel = "stylesheet" href = "assets/css/bootstrap_carousel">
   <!-- Header Javascript links -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/bootstrap_carousel"></script>
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5.js"></script>
 		<script src="assets/js/respond.min.js"></script>
@@ -253,20 +254,6 @@
     </div>
   </footer>
 </div>
-<script>
-  // Activate Carousel
-$("#myCarousel").carousel();
-
-// Enable Carousel Indicators
-$(".item").click(function(){
-    $("#myCarousel").carousel(1);
-});
-
-// Enable Carousel Controls
-$(".left").click(function(){
-    $("#myCarousel").carousel("prev");
-});
-</script>
 </body>
 
 </html>
