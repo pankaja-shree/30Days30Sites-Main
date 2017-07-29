@@ -641,3 +641,7 @@ footer
   color: #08C;
   border-radius: 10px;
 }
+/* form */
+.textfield__input{
+  padding: 1%;
+}
