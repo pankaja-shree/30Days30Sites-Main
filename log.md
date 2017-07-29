@@ -16,4 +16,9 @@ Today **I did**:  Events page
 **I learned:**  Parallax effect for background images, background image overlays. Creating Side drawer panels.
 **Link:** [Link to website](http://chivalrous-pot.surge.sh/)
 
+### **Day 3:** 27.07.2015
+Today **I did**:  Tourist attraction
+**I learned:**  Carousal of images and text, header meta data.
+**Link:** [Link to website]()
+
 
