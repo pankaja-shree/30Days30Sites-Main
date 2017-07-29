@@ -127,22 +127,22 @@ features
   /* 18px/16px */
 }
 .features__text { margin: 0; }
-.features__bike
+.features__one
 {
   height: 90px;
-  background: url(../img/icon-bike.png) no-repeat center;
+  background: url(../img/boating-icon.png) no-repeat center;
   background-size: contain;
 }
-.features__phone
+.features__two
 {
   height: 149px;
-  background: url(../img/icon-phone.png) no-repeat center;
+  background: url(../img/nature-icon.png) no-repeat center;
   background-size: contain;
 }
-.features__safe
+.features__three
 {
   height: 80px;
-  background: url(../img/icon-safe.png) no-repeat center;
+  background: url(../img/rafting-icon.png) no-repeat center;
   background-size: contain;
 }
 @media (min-width: 38em)
@@ -169,9 +169,9 @@ features
 
 @media (min-width: 50em)
 {
-  .features__bike { height: 154px; }
-  .features__phone { height: 296px; }
-  .features__safe { height: 141px; }
+  .features__one { height: 154px; }
+  .features__two { height: 296px; }
+  .features__three { height: 141px; }
 }
 /* ----------------------------
 testimonials
@@ -604,3 +604,4 @@ footer
   .carousel-indicators {
     bottom: 20px;
   }
+}
