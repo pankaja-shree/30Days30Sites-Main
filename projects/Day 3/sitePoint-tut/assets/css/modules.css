@@ -145,6 +145,34 @@ features
   background: url(../img/icon-safe.png) no-repeat center;
   background-size: contain;
 }
+@media (min-width: 38em)
+{
+  .features { text-align: left; }
+  .features__row
+  {
+    margin-bottom: 4.1667em;
+    /* 75px/18px */
+  }
+  .features__row:last-child { margin: 0; }
+  .features__padding
+  {
+    padding-top: 4em;
+    /* 72px/18px */
+  }
+  .features__heading
+  {
+    font-size: 1.5556em;
+    /* 75px/18px */
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 50em)
+{
+  .features__bike { height: 154px; }
+  .features__phone { height: 296px; }
+  .features__safe { height: 141px; }
+}
 /* ----------------------------
 testimonials
 ---------------------------- */
