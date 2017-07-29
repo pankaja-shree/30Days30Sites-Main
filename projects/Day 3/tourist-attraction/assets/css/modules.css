@@ -352,17 +352,17 @@ footer
 
 }
 .carousel .one {
-    background: url(assets/img/img1.jpg);
+    background: url(../img/img1.jpg);
     background-size: cover;
     -moz-background-size: cover;
 }
 .carousel .two {
-    background: url(assets/img/img2.jpg);
+    background: url(../img/img2.jpg);
     background-size: cover;
     -moz-background-size: cover;
 }
 .carousel .three {
-    background: url(assets/img/img3.jpg);
+    background: url(../img/img3.jpg);
     background-size: cover;
     -moz-background-size: cover;
 }
