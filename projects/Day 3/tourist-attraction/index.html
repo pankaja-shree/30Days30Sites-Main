@@ -52,6 +52,7 @@
   <!-- Header Javascript links -->
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/backtotop.js"></script>
 	<!--[if lt IE 9]>
 		<script src="assets/js/html5.js"></script>
 		<script src="assets/js/respond.min.js"></script>
@@ -78,9 +79,11 @@
     <h1 class="banner-content__heading">
       Jog Falls - The highest falls in Asia.
     </h1>
-    <a href="#map" class="button">Visit</a>
+    <a href="#visit" class="button">Visit</a>
   </section>
 </div>
+<!-- Back to top button -->
+<button class="header__nav-about" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!-- about -->
 <div id = "about" class="row row--grey row--padding-wide facts">
   <section class="row container-narrow facts-intro">
@@ -207,12 +210,9 @@
   </section>
 </div>
 <!-- Map and route -->
-<div class="row">
-  <div class="col-medium">
-    <img src="assets/img/photo1.jpg" alt="Writing on notepaper">
-  </div>
-  <div class="col-medium">
-    <img src="assets/img/photo2.jpg" alt="Holding a mobile device showing a graph">
+<div id = "visit" class="row">
+  <div class=" container-wide">
+    <img src="assets/img/photo2.jpg" alt="Jog falls map">
   </div>
 </div>
 <!-- footer -->
@@ -220,7 +220,7 @@
   <footer class="row container-wide" role="contentinfo">
     <div class="col-wide footer__info">
       <div class="footer__logo">
-        <img src="assets/img/dummy-logo.png" alt="correlate">
+        <img src="assets/img/falls-logo.png" alt="correlate">
       </div>
       <div class="row">
         <div class="col-medium">
