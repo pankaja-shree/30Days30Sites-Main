@@ -339,4 +339,12 @@ footer
 {
 	.footer__cta { text-align: right; }
 }
-/* Carousel */
+/* Button a */
+.button{
+  padding: 1%;
+  color: #fff;
+  background: #56b880;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
