@@ -1,12 +1,22 @@
-/*Make parent element a flex container*/
-/* ul - flex container */
+/*Make parent element a flex container
+ * ul - flex container 
+/* Flex container properties
+ * Flex-direction || Flex-wrap || Flex-flow || Justify-content || Align-items || Align-content
+ * justify-content - affects main axis
+ * align items - affexts cross axis
+*/ 
 ul {
   display: flex; /*or inline-flex*/
+  flex-wrap: wrap;
+  border: 1px solid red;
+    padding: 0;
+    list-style: none;
+    background-color: #e8e8e9;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50%;
 }
 /* li - flex item */
 li {
-  width: 100px;
-  height: 100px;
   background-color: #8cacea;
-  margin: 8px;
 }
