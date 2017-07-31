@@ -1,0 +1,14 @@
+html,
+  body {
+    height: 100%; /*setting this explicitly is important*/
+  }
+body {
+    display: flex; /*flex superpowers activated! */
+    flex-direction: column; /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/
+  }
+main {
+    flex: 1 0 auto; /*fill the available space*/
+  }
+footer {
+    flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
+  }
