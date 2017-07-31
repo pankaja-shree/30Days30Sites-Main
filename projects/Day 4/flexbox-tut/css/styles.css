@@ -5,25 +5,38 @@
  * justify-content - affects main axis
  * align items - affexts cross axis
 */ 
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+    min-height: 400px;
+    min-width: 400px;
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 55px 50px -20px #b6b6b6; 
+    width: 70%;
+}
 ul {
-  display: flex; /*or inline-flex*/
-  flex-wrap: wrap;
-  border: 1px solid red;
-    padding: 0;
-    list-style: none;
-    background-color: #e8e8e9;
-    justify-content: space-between;
-    align-items: baseline;
-    align-content: flex-end;
+  padding: 0;
+  list-style: none;
 }
 /* li - flex item 
  * Flex item properties: 
  * Order || Flex-grow || Flex-shrink || Flex-basis
+ * align-self
 */
-li {
-  background-color: #8cacea;
-    width: 100px;
-      
-      margin: 8px;
-      padding: 4px
+.twitter {
+  display: flex;
+  align-items: center;
+  
+}
+.twitter__bird {
+  margin-left: auto;
+  margin-right: auto
+}
+li{
+  padding: 1%;
 }
