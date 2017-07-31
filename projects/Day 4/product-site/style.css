@@ -13,6 +13,19 @@ body {
   }
 main {
     flex: 1 0 auto; /*fill the available space*/
+     display: flex; /* flex container with flex items: sidebar & main content section*/
+  }
+aside {   
+    flex: 0 0 40px; /*do not grow or shrink. Stay fixed at 40px*/ 
+    display: flex; /*Now a flex-container too*/  
+    flex-direction: column; /*stack icons vertically*/
+    /*since direction is changed, this works on the vertical direction*/
+    justify-content: space-around;   
+    align-items: center; /*direction is changed! This affects the horizontal direction. Places Icons in the center*/
+     background-color: #f2f2f2; /*make me pretty*/
+  }
+     aside i.fa {
+        font-size: 0.9em;  /*font size for the icons*/
   }
 footer {
     flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
