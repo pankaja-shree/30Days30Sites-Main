@@ -5,12 +5,9 @@
 </template>
 <style>
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  padding: 1%;
-  background-color: #bcd;
-  text-align: center;
-}
+    flex: 0 0 50px; /*don't grow or shrink - just stay at a height of 50px.*/
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(61, 100, 158, .9);
+  }
 </style>
