@@ -21,17 +21,28 @@
         <h3 class="md-title">Filter Products by:</h3>
       </div>
     </md-toolbar>
-   <md-row md-align = "center"> 
-   <h4>Brand</h4>
+   <div style = "padding: 5%"> 
+   <h4 class="md-title">Brand</h4>
         <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 1</md-checkbox>
         <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 2</md-checkbox>
         <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 3</md-checkbox>
-        </md-row>
 
-        <md-row md-flex-offset="8"> 
-   <h4>Price</h4>
-       
-        </md-row>
+   <h4 class = "md-title">Price</h4>
+       <form novalidate @submit.stop.prevent="submit">
+  <md-input-container>
+    <label>Min Price: </label>
+    <md-input v-model="initialValue"></md-input>
+  </md-input-container>
+  <md-input-container>
+    <label>Max Price: </label>
+    <md-input v-model="finalValue"></md-input>
+  </md-input-container>
+  </form>
+
+  <h4 class="md-title">Sort</h4>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Highest Price first</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Highest rating first</md-checkbox>
+        </div>
     <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
   </md-sidenav>
 
@@ -39,7 +50,7 @@
 
 <md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="33" v-for='product in products'>
 
-  <md-card style = "margin:2%">
+  <md-card class="card-ripple" md-with-hover style = "margin:2%">
   <md-card-header>
     <md-card-header-text>
       <div class="md-title">{{product.name}}</div>
@@ -65,11 +76,12 @@
   </md-card-header>
 
   <md-card-media>
+    <md-ink-ripple />  
     <img :src = "product.img" alt="Alarm clock 1" />
   </md-card-media>
 
   <md-card-content>
-    {{product.description}}<br>
+    <span class = "md-subheading"> Product description: </span><br> {{product.description}}<br>
     Price: {{product.price}}<br>
     <md-rating-bar :v-model="product.rating" :md-max-rating="5" class="md-primary" disabled></md-rating-bar>
 
@@ -105,49 +117,50 @@ export default {
       products: [
         {
           'name': 'Product 1',
-          'description': 'Lorem ipsum',
+          'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
           'rating':'3',
-          'img': './src/assets/img1.jpg'
+          'img': './src/assets/img2.jpg'
           
         },
         {
           'name': 'Product 2',
-          'description': 'Lorem ipsum',
+          'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
           'rating': '4',
           'img': './src/assets/img2.jpg'
         },
         {
           'name': 'Product 3',
-          'description': 'Lorem ipsum',
+          'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
           'rating': '4',
           'img': './src/assets/img2.jpg'
         },
         {
           'name': 'Product 4',
-          'description': 'Lorem ipsum',
+          'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
           'rating': '4',
           'img': './src/assets/img2.jpg'
         },
         {
           'name': 'Product 5',
-          'description': 'Lorem ipsum',
+          'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
           'rating': '4',
           'img': './src/assets/img2.jpg'
         },
         {
           'name': 'Product 6',
-          'description': 'Lorem ipsum',
+          'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
           'rating': '4',
           'img': './src/assets/img2.jpg'
         }
-      ]
-      
+      ],
+      initialValue: 'Min price',
+      finalValue: 'Max price'
     }
   },
   methods: {
@@ -165,7 +178,7 @@ export default {
     },
     close(ref) {
       console.log('Closed: ' + ref);
-    }
+    },
   },
   components: {
     'app-footer': footer
@@ -173,13 +186,10 @@ export default {
 }
 </script>
 <style src="../node_modules/vue-material/dist/vue-material.css">
-.parent {
-  overflow: hidden;
+.card-ripple {
+  width: 300px;
+  margin-top: 24px;
 }
-
-.card img {
-  width: 100%;
-  height: auto;
-}</style>
+</style>
 
 
