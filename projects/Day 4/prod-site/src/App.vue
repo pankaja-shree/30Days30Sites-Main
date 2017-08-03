@@ -10,10 +10,11 @@
  <md-button class="md-icon-button">
       <md-icon>search</md-icon>
     </md-button>
+
+  <md-button class="md-raised md-accent" @click="toggleRightSidenav"><md-icon>filter_list</md-icon>&nbsp; Filter Products </md-button>
     
   <md-button class="md-raised md-warn">Sign in</md-button>
-</md-toolbar>
-    <md-button class="md-raised md-accent" @click="toggleRightSidenav"><md-icon>filter_list</md-icon>Filter Products </md-button>
+</md-toolbar> 
 
   <md-sidenav class="md-right" ref="rightSidenav" @open="open('Right')" @close="close('Right')">
     <md-toolbar>
@@ -83,7 +84,7 @@
   <md-card-content>
     <span class = "md-subheading"> Product description: </span><br> {{product.description}}<br>
     Price: {{product.price}}<br>
-    <md-rating-bar :v-model="product.rating" :md-max-rating="5" class="md-primary" disabled></md-rating-bar>
+    <md-rating-bar v-model="product.rating" :md-max-rating="5" class="md-primary" disabled></md-rating-bar>
 
   </md-card-content>
   <md-card-actions>
@@ -127,7 +128,7 @@ export default {
           'name': 'Product 2',
           'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
-          'rating': '4',
+          'rating': '2',
           'img': './src/assets/img2.jpg'
         },
         {
@@ -141,14 +142,14 @@ export default {
           'name': 'Product 4',
           'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
-          'rating': '4',
+          'rating': '2.5',
           'img': './src/assets/img2.jpg'
         },
         {
           'name': 'Product 5',
           'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
           'price': '$500',
-          'rating': '4',
+          'rating': '4.5',
           'img': './src/assets/img2.jpg'
         },
         {
