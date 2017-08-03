@@ -7,18 +7,31 @@
 
   <h2 class="md-title" style="flex: 1">Brand</h2>
 
+ <md-button class="md-icon-button">
+      <md-icon>search</md-icon>
+    </md-button>
+    
   <md-button class="md-raised md-warn">Sign in</md-button>
 </md-toolbar>
-    <md-button class="md-raised md-accent" @click="toggleRightSidenav">Filter Products</md-button>
+    <md-button class="md-raised md-accent" @click="toggleRightSidenav"><md-icon>filter_list</md-icon>Filter Products </md-button>
 
   <md-sidenav class="md-right" ref="rightSidenav" @open="open('Right')" @close="close('Right')">
     <md-toolbar>
       <div class="md-toolbar-container">
-        <h3 class="md-title">Filter Products</h3>
-        
+        <h3 class="md-title">Filter Products by:</h3>
       </div>
     </md-toolbar>
+   <md-row md-align = "center"> 
+   <h4>Brand</h4>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 1</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 2</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 3</md-checkbox>
+        </md-row>
 
+        <md-row md-flex-offset="8"> 
+   <h4>Price</h4>
+       
+        </md-row>
     <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
   </md-sidenav>
 
@@ -58,7 +71,8 @@
   <md-card-content>
     {{product.description}}<br>
     Price: {{product.price}}<br>
-    Rating: {{product.rating}}
+    <md-rating-bar :v-model="product.rating" :md-max-rating="5" class="md-primary" disabled></md-rating-bar>
+
   </md-card-content>
   <md-card-actions>
     <md-button class="md-icon-button">
@@ -112,14 +126,21 @@ export default {
           'img': './src/assets/img2.jpg'
         },
         {
-          'name': 'Product 3',
+          'name': 'Product 4',
           'description': 'Lorem ipsum',
           'price': '$500',
           'rating': '4',
           'img': './src/assets/img2.jpg'
         },
         {
-          'name': 'Product 3',
+          'name': 'Product 5',
+          'description': 'Lorem ipsum',
+          'price': '$500',
+          'rating': '4',
+          'img': './src/assets/img2.jpg'
+        },
+        {
+          'name': 'Product 6',
           'description': 'Lorem ipsum',
           'price': '$500',
           'rating': '4',
