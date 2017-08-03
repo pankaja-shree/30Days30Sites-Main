@@ -24,9 +24,9 @@
     </md-toolbar>
    <div style = "padding: 5%"> 
    <h4 class="md-title">Brand</h4>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand">Brand 1</md-checkbox>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand">Brand 2</md-checkbox>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand">Brand 3</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand1">Brand 1</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand2">Brand 2</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand3">Brand 3</md-checkbox>
 
    <h4 class = "md-title">Price</h4>
        <form novalidate @submit.stop.prevent="submit">
@@ -41,8 +41,8 @@
   </form>
 
   <h4 class="md-title">Sort</h4>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_sort">Highest Price first</md-checkbox>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_sort">Highest rating first</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_sort1">Highest Price first</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_sort2">Highest rating first</md-checkbox>
         </div>
     <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
   </md-sidenav>
@@ -162,8 +162,11 @@ export default {
       ],
       initialValue: 'Min price',
       finalValue: 'Max price',
-      checkbox_brand: ' ',
-      checkbox_sort: ' '
+      checkbox_brand1: ' ',
+      checkbox_brand2: ' ',
+      checkbox_brand3: ' ',
+      checkbox_sort1: ' ',
+      checkbox_sort2: ' '
     }
   },
   methods: {
