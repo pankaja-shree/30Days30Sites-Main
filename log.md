@@ -8,7 +8,7 @@ I completed this challenge on *insert date here*.
 
 ### **Day 1:** 24.07.2015
 Today **I did**:  Portfolio site
-**I learned:**  Material Design
+**I learned:**  Material Design Lite for websites
 **Link:** [Link to website](https://pumped-van.surge.sh)
 
 ### **Day 2:** 25.07.2015
@@ -22,7 +22,7 @@ Today **I did**:  Tourist attraction
 **Link:** [Link to website](http://gullible-sofa.surge.sh/)
 
 ### **Day 4:** 29.07.2015
-Today **I did**:  Tourist attraction
-**I learned:**  Carousal of images and text, header meta data.
+Today **I did**:  Product site
+**I learned:**  Learnt to use Vue-material components.
 **Link:** [Link to website]()
 
