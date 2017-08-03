@@ -9,26 +9,27 @@
 
   <md-button class="md-raised md-warn">Sign in</md-button>
 </md-toolbar>
-    <md-button class="md-raised md-accent" @click="toggleRightSidenav">Toggle right</md-button>
+    <md-button class="md-raised md-accent" @click="toggleRightSidenav">Filter Products</md-button>
 
   <md-sidenav class="md-right" ref="rightSidenav" @open="open('Right')" @close="close('Right')">
     <md-toolbar>
       <div class="md-toolbar-container">
-        <h3 class="md-title">Sidenav content</h3>
+        <h3 class="md-title">Filter Products</h3>
+        
       </div>
     </md-toolbar>
 
     <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
   </md-sidenav>
 
-<md-layout md-align="center" md-gutter="16">
+<md-layout md-gutter = "8" style = "padding: 2%">
 
-<md-layout md-flex="35" v-for='product in products'>
-  <md-card>
+<md-layout md-flex-xsmall="100" md-flex-small="50" md-flex-medium="33" v-for='product in products'>
+
+  <md-card style = "margin:2%">
   <md-card-header>
     <md-card-header-text>
       <div class="md-title">{{product.name}}</div>
-      <div class="md-subhead">Subtitle here</div>
     </md-card-header-text>
 
     <md-menu md-size="4" md-direction="bottom left">
@@ -38,13 +39,13 @@
 
       <md-menu-content>
         <md-menu-item>
-          <span>Call</span>
-          <md-icon>phone</md-icon>
+          <span>Add to cart</span>
+          <md-icon>add_shopping_cart</md-icon>
         </md-menu-item>
 
         <md-menu-item>
-          <span>Send a message</span>
-          <md-icon>message</md-icon>
+          <span>Read more</span>
+          <md-icon>more_horiz</md-icon>
         </md-menu-item>
       </md-menu-content>
     </md-menu>
@@ -55,9 +56,25 @@
   </md-card-media>
 
   <md-card-content>
-    {{product.description}}
+    {{product.description}}<br>
+    Price: {{product.price}}<br>
+    Rating: {{product.rating}}
   </md-card-content>
+  <md-card-actions>
+    <md-button class="md-icon-button">
+      <md-icon>favorite</md-icon>
+    </md-button>
+
+    <md-button class="md-icon-button">
+      <md-icon>add_shopping_cart</md-icon>
+    </md-button>
+
+    <md-button class="md-icon-button">
+      <md-icon>share</md-icon>
+    </md-button>
+  </md-card-actions>
 </md-card>
+
 </md-layout>
 </md-layout>
     <app-footer></app-footer>
@@ -82,6 +99,20 @@ export default {
         },
         {
           'name': 'Product 2',
+          'description': 'Lorem ipsum',
+          'price': '$500',
+          'rating': '4',
+          'img': './src/assets/img2.jpg'
+        },
+        {
+          'name': 'Product 3',
+          'description': 'Lorem ipsum',
+          'price': '$500',
+          'rating': '4',
+          'img': './src/assets/img2.jpg'
+        },
+        {
+          'name': 'Product 3',
           'description': 'Lorem ipsum',
           'price': '$500',
           'rating': '4',
@@ -120,6 +151,14 @@ export default {
   }
 }
 </script>
-<style src="../node_modules/vue-material/dist/vue-material.css"></style>
+<style src="../node_modules/vue-material/dist/vue-material.css">
+.parent {
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}</style>
 
 
