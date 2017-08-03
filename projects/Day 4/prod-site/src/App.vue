@@ -21,9 +21,45 @@
     <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
   </md-sidenav>
 
-    <div v-for='product in products'>
-    <img src = "product.img" />
-    </div>
+<md-layout md-align="center" md-gutter="16">
+
+<md-layout md-flex="35" v-for='product in products'>
+  <md-card>
+  <md-card-header>
+    <md-card-header-text>
+      <div class="md-title">{{product.name}}</div>
+      <div class="md-subhead">Subtitle here</div>
+    </md-card-header-text>
+
+    <md-menu md-size="4" md-direction="bottom left">
+      <md-button class="md-icon-button" md-menu-trigger>
+        <md-icon>more_vert</md-icon>
+      </md-button>
+
+      <md-menu-content>
+        <md-menu-item>
+          <span>Call</span>
+          <md-icon>phone</md-icon>
+        </md-menu-item>
+
+        <md-menu-item>
+          <span>Send a message</span>
+          <md-icon>message</md-icon>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </md-card-header>
+
+  <md-card-media>
+    <img :src = "product.img" alt="Alarm clock 1" />
+  </md-card-media>
+
+  <md-card-content>
+    {{product.description}}
+  </md-card-content>
+</md-card>
+</md-layout>
+</md-layout>
     <app-footer></app-footer>
   </div>
 </template>
@@ -41,15 +77,22 @@ export default {
           'description': 'Lorem ipsum',
           'price': '$500',
           'rating':'3',
-          'img': '~assets/img1.jpg'
+          'img': './src/assets/img1.jpg'
           
         },
         {
-          'name': 'Product 1',
+          'name': 'Product 2',
           'description': 'Lorem ipsum',
           'price': '$500',
           'rating': '4',
-          'img': 'assets/img2.jpg'
+          'img': './src/assets/img2.jpg'
+        },
+        {
+          'name': 'Product 3',
+          'description': 'Lorem ipsum',
+          'price': '$500',
+          'rating': '4',
+          'img': './src/assets/img2.jpg'
         }
       ]
       
