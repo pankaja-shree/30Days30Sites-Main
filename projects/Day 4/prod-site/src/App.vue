@@ -23,9 +23,9 @@
     </md-toolbar>
    <div style = "padding: 5%"> 
    <h4 class="md-title">Brand</h4>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 1</md-checkbox>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 2</md-checkbox>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Brand 3</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand">Brand 1</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand">Brand 2</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_brand">Brand 3</md-checkbox>
 
    <h4 class = "md-title">Price</h4>
        <form novalidate @submit.stop.prevent="submit">
@@ -40,8 +40,8 @@
   </form>
 
   <h4 class="md-title">Sort</h4>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Highest Price first</md-checkbox>
-        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Highest rating first</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_sort">Highest Price first</md-checkbox>
+        <md-checkbox id="my-test1" name="my-test1" v-model="checkbox_sort">Highest rating first</md-checkbox>
         </div>
     <md-button class="md-raised md-accent" @click="closeRightSidenav">Close</md-button>
   </md-sidenav>
@@ -77,7 +77,7 @@
 
   <md-card-media>
     <md-ink-ripple />  
-    <img :src = "product.img" alt="Alarm clock 1" />
+    <img :src = "product.img" :alt="product.name" />
   </md-card-media>
 
   <md-card-content>
@@ -160,7 +160,9 @@ export default {
         }
       ],
       initialValue: 'Min price',
-      finalValue: 'Max price'
+      finalValue: 'Max price',
+      checkbox_brand: ' ',
+      checkbox_sort: ' '
     }
   },
   methods: {
