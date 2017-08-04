@@ -1,4 +1,5 @@
 <template>
+<md-layout md-align="center" md-flex-xsmall="100" md-flex-small="50" md-flex-medium="20">
   <md-list >
     <md-list-item v-for="lunch in lunches">
       <md-avatar>
@@ -17,6 +18,7 @@
       <md-divider class="md-inset"></md-divider>
     </md-list-item>
   </md-list>
+  </md-layout>
 </template>
 
 <script>
