@@ -8,12 +8,11 @@
   </md-tab>
 
   <md-tab id="lunch" md-label="Lunch" md-icon="restaurant">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+    <app-lunch></app-lunch>
   </md-tab>
 
   <md-tab id="dinner" md-label="Dinner" md-icon="restaurant_menu">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
+    <app-dinner></app-dinner>
   </md-tab>
 
   <md-tab id="desserts" md-label="Desserts" md-icon="cake">
@@ -33,13 +32,17 @@
 import toolbar from './components/toolbar.vue'
 import footer from './components/footer.vue'
 import starters from './components/starters.vue'
+import lunch from './components/lunch.vue'
+import dinner from './components/dinner.vue'
 
 export default {
   name: 'app',
   components: {
     'app-toolbar': toolbar,
     'app-footer': footer,
-    'app-starter': starters
+    'app-starter': starters,
+    'app-lunch': lunch,
+    'app-dinner': dinner
   }
 }
 </script>
