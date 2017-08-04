@@ -16,7 +16,7 @@
   </md-tab>
 
   <md-tab id="desserts" md-label="Desserts" md-icon="cake">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
+    <app-dessert></app-dessert>
   </md-tab>
 
   <md-tab id="drinks" md-label="Beverages" md-icon="local_bar">
@@ -34,6 +34,7 @@ import footer from './components/footer.vue'
 import starters from './components/starters.vue'
 import lunch from './components/lunch.vue'
 import dinner from './components/dinner.vue'
+import dessert from './components/dessert.vue'
 
 export default {
   name: 'app',
@@ -42,7 +43,8 @@ export default {
     'app-footer': footer,
     'app-starter': starters,
     'app-lunch': lunch,
-    'app-dinner': dinner
+    'app-dinner': dinner,
+    'app-dessert': dessert
   }
 }
 </script>
