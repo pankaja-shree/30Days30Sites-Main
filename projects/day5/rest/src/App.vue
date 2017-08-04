@@ -1,21 +1,10 @@
 <template>
   <div id="app">
-    <md-toolbar>
-    <md-icon>local_dining</md-icon><h1 class="md-title" style="flex: 1">&nbsp; Yumm</h1>
-    <md-button class="md-icon-button">
-      <md-icon>info</md-icon>
-    </md-button>
-    <md-button class="md-icon-button">
-      <md-icon>directions</md-icon>
-    </md-button>
-    <md-button class="md-icon-button">
-      <md-icon>call</md-icon>
-    </md-button>
-  </md-toolbar>
+    <app-toolbar></app-toolbar>
 
   <md-tabs md-fixed>
   <md-tab id="starters" md-label="Starters" md-icon="local_pizza">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+    <app-starter></app-starter>
   </md-tab>
 
   <md-tab id="lunch" md-label="Lunch" md-icon="restaurant">
@@ -36,31 +25,21 @@
   </md-tab>
 </md-tabs>
 
-
+<app-footer></app-footer>
   </div>
 </template>
 
 <script>
+import toolbar from './components/toolbar.vue'
+import footer from './components/footer.vue'
+import starters from './components/starters.vue'
+
 export default {
   name: 'app',
-  data () {
-    return {
-      'starters': [
-
-      ],
-      'lunch':[
-
-      ],
-      'dinner':[
-
-      ],
-      'desserts':[
-
-      ],
-      'beverages':[
-        
-      ]
-    }
+  components: {
+    'app-toolbar': toolbar,
+    'app-footer': footer,
+    'app-starter': starters
   }
 }
 </script>
