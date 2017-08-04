@@ -44,4 +44,5 @@ export default {
 }
 </script>
 
-<style src=".../node_modules/vue-material/dist/vue-material.css"></style>
+<style src=".../node_modules/vue-material/dist/vue-material.css">
+</style>
