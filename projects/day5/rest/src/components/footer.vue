@@ -5,9 +5,11 @@
 </template>
 <style>
 footer {
-    flex: 0 0 50px; /*don't grow or shrink - just stay at a height of 50px.*/
+  position:fixed;
+width: 100%;
+bottom:0;
     padding: 10px;
     color: #fff;
-    background-color: #3F51B5;
+    background-color: #689F38;
   }
 </style>
