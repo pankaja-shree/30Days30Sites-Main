@@ -1,6 +1,6 @@
 <template>
 <md-layout md-align="center" md-flex-xsmall="100" md-flex-small="50" md-flex-medium="20">
-  <md-list >
+  <md-list>
     <md-list-item v-for="lunch in lunches">
       <md-avatar>
         <img :src="lunch.image" :alt="lunch.name">
