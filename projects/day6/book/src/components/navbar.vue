@@ -22,7 +22,7 @@
 						<li class="active"><a href="#book">Book <span class="sr-only">(current)</span></a></li>
 						<li><a href="#reviews">Reviews</a></li>
 						<li><a href="#blog">Author</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#contact">Purchase</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
