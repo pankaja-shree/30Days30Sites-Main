@@ -42,7 +42,9 @@
 		</div> <!-- /.book-bg -->
 	</section> <!-- #book --> 
 	<section class="cta-1 container-fluid">
-		A few hundred years of type and <strong class="regular">typography</strong> have <br> established <strong class="regular">rules</strong> that only a fool would ignore.
+	<blockquote class="blockquote">
+		<p class="mb-0">"A few hundred years of type and <strong class="regular">typography</strong> have <br> established <strong class="regular">rules</strong> that only a fool would ignore."</p>
+	</blockquote>
 	</section> <!-- /.cta-1 -->
 		</div> <!-- .home-bg -->
 	</section> <!-- #home -->
