@@ -178,6 +178,7 @@ p.header-sub
 {
 	position: relative;
 	background: #ebebeb;
+	text-align: left;
 }
 .book .col-sm-6
 {
@@ -496,14 +497,14 @@ footer
 }
 @media (min-width: 768px){
 	.home .home-bg{
-		background: url('../assets/book-bg.jpeg') no-repeat ;
+		background: url('../assets/header-bg.jpeg') no-repeat ;
 		/* Create the parallax scrolling effect */
     	background-attachment: fixed;
 		background-position: left bottom;
 		background-size: cover;
 	}
 	.book .book-bg{
-		background: url('../images/iPad.png') no-repeat;
+		background: url('../assets/cover.jpeg') no-repeat;
 		background-position: right bottom;
 	}
 	
