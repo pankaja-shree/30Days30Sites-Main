@@ -30,3 +30,8 @@ Today **I did**:  Product site
 Today **I did**:  Restaurant Menu
 **I learned:**  Learnt to use Vue-material components - tabs, tooltips, icons, list items. Decomposed the app into several vue-components and combined them to build a final menu app.
 **Link:** [Link to website](http://kindly-border.surge.sh/)
+
+### **Day 6:** 05.08.2017
+Today **I did**:  Book/Author
+**I learned:**  Using bootstrap-vue. Using style-loader and css-loader for webpack-simple template projects to link css using javascript.
+**Link:** [Link to website]()
