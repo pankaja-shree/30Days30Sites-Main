@@ -7,7 +7,7 @@
  						Get the eBook Sample
  					</h4>
  					<p class="subt">
- 						Read a few chapters for <strong>free</strong> from the book. Or Purchase the eBook on Amazon Kindle.
+ 						Read a few chapters for <strong>free</strong> from the book. <br>Or Purchase the eBook on Amazon.
  					</p>
  				</div>
  				<div class="col-sm-3">
