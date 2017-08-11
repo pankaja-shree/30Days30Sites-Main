@@ -101,7 +101,6 @@ a:hover
 .home
 {
 	background: linear-gradient(45deg, #f1eeed, #abc);
-	height: 100vh;
 	color: #616161;
 	letter-spacing: 1px;
 	text-align: right;
@@ -175,6 +174,7 @@ p.header-sub
 ==================================================*/
 .blogger
 {
+	background: linear-gradient(45deg, #616161, #abc);
 	border-radius: 100%;
 }
 .blog-left
@@ -209,15 +209,6 @@ p.header-sub
 .place
 {
 	margin: 20px 0px 5px;
-}
-.book-icon
-{
-	word-spacing: 25px;
-	font-size: 14px;
-}
-.book-icon .ion-android-compass
-{
-	color: #d66039;
 }
 .blog .light
 {
@@ -260,83 +251,6 @@ h4
 .icons{
 	color: #f1eeed;
 }
-/*=================================================
-||				11. Contact
-==================================================*/
-.contact
-{
-	background-color: #ebebeb;
-}
-.contact h2
-{
-	margin-top: 0px;
-}
-.address
-{
-	margin-bottom: 40px;
-}
-.address, .call
-{
-	line-height: 200%;
-	font-size: 16px;
-}
-.address strong
-{
-	font-size: 18px;
-}
-.contactform label
-{
-	float:left;
-}
-.contactform .form-control
-{
-	margin-bottom:20px;
-	border:1px solid #cbcbcb;
-	height:45px;
-}
-.contactform textarea.form-control {
-	height: 170px;
-}
-
-/* Inputs styles */
-.contactform .form-control
-{
-	border-radius:0!important;
-	;
-	-webkit-box-shadow:none;
-	box-shadow:none;
-}
-.contactform .form-control:focus
-{
-	-webkit-box-shadow:none;
-	box-shadow:none;
-	border:1px solid #d66039;
-}
-
-.btn-send
-{
-	transition: all 0.4s;
-	border-radius: 0;
-	width: 100%;
-	background:  #d66039;
-	color: #f1eeed;
-	padding: 10px 30px;
-	margin: 5px auto;
-	border: 1px solid transparent;
-}
-
-.btn-send:hover
-{
-	background: #f1eeed;
-	color: #d66039;
-	border-color: #d66039;
-}
-
-button,button:focus,button:hover,button:active
-{
-	outline: none!important;
-}
-
 /*=================================================
 ||				12. Footer
 ==================================================*/
@@ -403,6 +317,11 @@ footer
 		padding-top: 15%;
 	}
 	.blog{
+		background:
+		linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    );
 		text-align: center;
 	}
 	.blog-left{
