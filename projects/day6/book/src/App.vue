@@ -3,7 +3,7 @@
 
   <b-navbar v-b-scrollspy:scrollspy-example toggleable type="light" variant="faded" toggle-breakpoint="md" fixed="top">
     <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-    <b-navbar-brand href="#home" @click.stop="scrollIntoView($event)">BookName</b-navbar-brand>
+    <b-navbar-brand href="#home">BookName</b-navbar-brand>
     <b-collapse is-nav id="nav_collapse">
     <b-nav pills>
       <b-nav-item href="#about" @click.stop="scrollIntoView($event)">About</b-nav-item>
@@ -16,17 +16,12 @@
 
   <div id="scrollspy-example">
     <app-header id="home"></app-header>
-    <p id="about">
-      <app-book></app-book>
+      <app-book id="about"></app-book>
       <book-review></book-review>
-    </p>
-    <p id="author">
-      <book-author></book-author>
-    </p>
-    <p id="purchase">
-      <app-purchase></app-purchase>
-    </p>
+      <book-author id="author"></book-author>
+      <app-purchase id="purchase"></app-purchase>
   </div>
+  <app-footer></app-footer>
 </div>
 </template>
 
@@ -36,6 +31,7 @@ import book from './components/book.vue'
 import reviews from './components/reviews.vue'
 import purchase from './components/purchase.vue'
 import author from './components/author.vue'
+import footer from './components/footer.vue'
 
 export default {
   name: 'app',
@@ -44,7 +40,8 @@ export default {
     'app-book': book,
     'app-purchase': purchase,
     'book-review': reviews,
-    'book-author': author
+    'book-author': author,
+    'app-footer': footer
   },
   methods: {
         // Convenience method to scroll an element that is offscreen into view
