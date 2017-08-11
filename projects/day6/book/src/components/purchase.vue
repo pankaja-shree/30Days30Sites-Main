@@ -1,37 +1,29 @@
 <template>
-<!-- Navigation -->
-	<section class="navigation_bar">
-		
-
-		<nav class="navbar navbar-default navigation">
-			<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a href="#index.html" class="logo navbar-brand">Amazon <span>e</span>Book</a>
-				</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#book">Book <span class="sr-only">(current)</span></a></li>
-						<li><a href="#reviews">Reviews</a></li>
-						<li><a href="#blog">Author</a></li>
-						<li><a href="#contact">Purchase</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container -->
-		</nav>
+<section class="cta-2">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-sm-6">
+ 					<h4>
+ 						Get the eBook Sample
+ 					</h4>
+ 					<p class="subt">
+ 						Read a few chapters for <strong>free</strong> from the book. Or Purchase the eBook on Amazon Kindle.
+ 					</p>
+ 				</div>
+ 				<div class="col-sm-3">
+ 					<a href="#" class="btn btn-default btn-lg bttn">Get free sample</a>
+ 				</div>
+				 <div class="col-sm-3">
+ 					<a href="#" class="btn btn-default btn-lg bttn">Purchase eBook</a>
+ 				</div>
+ 			</div> <!-- /.row -->
+ 		</div> <!-- /.container -->
+ 	</section> <!-- /.cta-2 -->
         </template>
 
         <script>
 export default {
-  name: 'navbar',
+  name: 'purchase',
   data () {
     return {
     }
