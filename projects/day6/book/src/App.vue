@@ -7,7 +7,7 @@
     <b-collapse is-nav id="nav_collapse">
     <b-nav pills>
       <b-nav-item href="#about" @click.stop="scrollIntoView($event)">About</b-nav-item>
-      <b-nav-item href="author" @click.stop="scrollIntoView($event)">Author</b-nav-item>
+      <b-nav-item href="#author" @click.stop="scrollIntoView($event)">Author</b-nav-item>
       <b-nav-item href="#purchase" @click.stop="scrollIntoView($event)">Purchase</b-nav-item>
     </b-nav>
     </b-collapse>
@@ -21,11 +21,7 @@
       <book-review></book-review>
     </p>
     <p id="author">
-      Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan
-      beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla
-      carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes
-      anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn
-      adipisicing craft beer vice keytar deserunt.
+      <book-author></book-author>
     </p>
     <p id="purchase">
       <app-purchase></app-purchase>
@@ -39,6 +35,7 @@ import header from './components/header.vue'
 import book from './components/book.vue'
 import reviews from './components/reviews.vue'
 import purchase from './components/purchase.vue'
+import author from './components/author.vue'
 
 export default {
   name: 'app',
@@ -46,7 +43,8 @@ export default {
     'app-header': header,
     'app-book': book,
     'app-purchase': purchase,
-    'book-review': reviews
+    'book-review': reviews,
+    'book-author': author
   },
   methods: {
         // Convenience method to scroll an element that is offscreen into view
