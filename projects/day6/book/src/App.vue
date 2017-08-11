@@ -16,8 +16,7 @@
 
   <div id="scrollspy-example">
     <app-header id="home"></app-header>
-    <h4 id="about">About</h4>
-    <p v-for="i in 3">
+    <p id="about" v-for="i in 3">
       <app-book></app-book>
     </p>
     <h4 id="mdo">@mdo</h4>
