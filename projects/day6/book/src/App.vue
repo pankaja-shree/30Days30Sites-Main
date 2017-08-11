@@ -16,10 +16,11 @@
 
   <div id="scrollspy-example">
     <app-header id="home"></app-header>
-    <p id="about" v-for="i in 3">
+    <p id="about">
       <app-book></app-book>
+      <book-review></book-review>
     </p>
-    <p id="author" v-for="i in 4">
+    <p id="author">
       Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan
       beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla
       carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes
@@ -36,6 +37,7 @@
 <script>
 import header from './components/header.vue'
 import book from './components/book.vue'
+import reviews from './components/reviews.vue'
 import purchase from './components/purchase.vue'
 
 export default {
@@ -43,7 +45,8 @@ export default {
   components: {
     'app-header': header,
     'app-book': book,
-    'app-purchase': purchase
+    'app-purchase': purchase,
+    'book-review': reviews
   },
   methods: {
         // Convenience method to scroll an element that is offscreen into view
