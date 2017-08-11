@@ -1,7 +1,6 @@
 <template>
-<div id="book">
 <!-- Book -->
-	<section class="book">
+	<section id="book" class="book">
 		<div class="book-bg">
 			<div class="container section-wrapper">
 				<div class="row">
@@ -22,11 +21,7 @@
 				</div>
 			</div> <!-- .container -->
 		</div> <!-- /.book-bg -->
-	</section> 
-	<section class="cta-1 container-fluid">
-		A few hundred years of type and <strong class="regular">typography</strong> have <br> established <strong class="regular">rules</strong> that only a fool would ignore.
-	</section> <!-- /.cta-1 -->
-	</div><!-- #book --> 
+	</section> <!-- #book --> 
 </template>
 
 <script>
@@ -38,3 +33,4 @@ export default {
   }
 }
 </script>
+
