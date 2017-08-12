@@ -300,8 +300,8 @@ footer
 	.blog{
 		background:
 		linear-gradient(
-      rgba(0, 0, 0, 0.3), 
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
     ),
 		url('../assets/author-bg.jpg') no-repeat ;
 		/* Create the parallax scrolling effect */
