@@ -17,7 +17,7 @@
  					</p>
  				</div> <!-- /.col-sm-8 -->
  				<div class="col-sm-4 text-center">
-                 <img src="../assets/author.jpg" alt="author" class="blogger">
+                 <img :src="author_img" alt="author" class="blogger">
  					<h2 class = "blogger-id">
  						Get in touch 
  					</h2>
@@ -45,6 +45,7 @@ export default {
   name: 'reviews',
   data () {
     return {
+		author_img: './src/assets/author.jpg'
     }
   }
 }
