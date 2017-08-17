@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    
-    </ul>
+  {{msg}}
   </div>
 </template>
 
@@ -55,8 +54,13 @@ export default {
             transform-origin: top left;
   }
 }
+
 .kenburns-top-left {
-	-webkit-animation: kenburns-top-left 5s ease-in-out both;
-	        animation: kenburns-top-left 5s ease-in-out both;
+	-webkit-animation: kenburns-top-left 5s infinite ease-in-out both;
+	        animation: kenburns-top-left 5s infinite ease-in-out both;
+}
+#app{
+  max-width: 100%;
+  background-image: url('./assets/img4.jpg');
 }
 </style>
