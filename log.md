@@ -33,5 +33,5 @@ Today **I did**:  Restaurant Menu
 
 ### **Day 6:** 05.08.2017
 Today **I did**:  Book/Author
-**I learned:**  Using bootstrap-vue. Using style-loader and css-loader for webpack-simple template projects to link css using javascript.
-**Link:** [Link to website]()
+**I learned:**  Learnt using bootstrap-vue. Using style-loader and css-loader for webpack-simple template projects to link css using javascript.
+**Link:** [Link to website](http://ahead-pipe.surge.sh/)
