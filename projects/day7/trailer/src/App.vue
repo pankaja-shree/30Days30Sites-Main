@@ -176,7 +176,7 @@ label {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background: #f0f0f0;
+  /*background: #f0f0f0;*/
 }
 
 #tab1:checked ~ #content1,
@@ -186,8 +186,8 @@ label {
 #tab5:checked ~ #content5 {
   display: block;
   padding: 20px;
-  background: #fff;
-  color: #999;
+  /*background: #fff;*/
+  color: #fff;
   border-bottom: 2px solid #f0f0f0;
 }
 
