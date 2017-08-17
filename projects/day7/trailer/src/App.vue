@@ -62,5 +62,7 @@ export default {
 #app{
   max-width: 100%;
   background-image: url('./assets/img4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>
