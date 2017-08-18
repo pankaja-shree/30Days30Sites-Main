@@ -15,6 +15,9 @@ Feel free to submit a pull request or contact me if you have resources you would
 [Unminify](http://unminify.com)  
 [Cloudinary](http://cloudinary.com)
 [Animate CSS](https://daneden.github.io/animate.css)
+*My added resources*
+[Text Shadow demos](http://cssdemos.tupence.co.uk/text-shadow.htm)
+[Animista](http://animista.net/play/text/pop-up/text-pop-up-top)
 
 ## Free Images
 [Vecteezy](https://www.vecteezy.com)  
