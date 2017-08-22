@@ -51,8 +51,8 @@
 		      	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</section>
+      <footer></footer>
 	</div>
-  <footer></footer>
   </div>
 </template>
 
@@ -90,6 +90,7 @@ export default {
     margin: 0;
 		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 		background-size: cover;
+    height: 100vh;
   }
 *,
 *:after,
