@@ -18,6 +18,7 @@ Feel free to submit a pull request or contact me if you have resources you would
 *My added resources*
 [Text Shadow demos](http://cssdemos.tupence.co.uk/text-shadow.htm)
 [Animista](http://animista.net/play/text/pop-up/text-pop-up-top)
+http://www.vuescript.com/about/
 
 ## Free Images
 [Vecteezy](https://www.vecteezy.com)  
