@@ -18,31 +18,17 @@
 			<label for="tab5"><span>Legal</span></label>
 
 			<section id="content1" class="tab-content">
-				<h3>Headline 1</h3>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		      	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		      	cillum dolore eu fugiat nulla pariatur.</p>
+        <h3>Buy Now</h3>
+        <div class = "buttons">
+		      	<button>On DVD</button> <button>On Blu-Ray</button>
+            </div>
+        <h3>Follow us</h3>
+		      	<div class = "buttons">
+            </div>
 			</section>
 
 			<section id="content2" class="tab-content">
-				<h3>Headline 2</h3>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		      	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		      	<p>The Pursuit of Happyness is a 2006 American biographical drama film based on entrepreneur Chris Gardner's nearly one-year struggle being homeless. Directed by Gabriele Muccino, the film features Will Smith as Gardner, a homeless salesman. Smith's son Jaden Smith co-stars, making his film debut as Gardner's son, Christopher Jr.</p><p>Life is a struggle for single father Chris Gardner (Will Smith). Evicted from their apartment, he and his young son (Jaden Christopher Syre Smith) find themselves alone with no place to go. Even though Chris eventually lands a job as an intern at a prestigious brokerage firm, the position pays no money. The pair must live in shelters and endure many hardships, but Chris refuses to give in to despair as he struggles to create a better life for himself and his son.</p>
 			</section>
 
 			<section id="content3" class="tab-content">
@@ -66,11 +52,13 @@
 		      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</section>
 	</div>
+  <footer></footer>
   </div>
 </template>
 
 <script>
 import Gallery from './gallery.vue'
+import footer from './footer.vue'
 export default {
   name: 'app',
   data () {
@@ -79,12 +67,16 @@ export default {
     }
   },
 	components:{
-		Gallery
+		Gallery, footer
 	}
 }
 </script>
 
 <style scoped>
+.buttons{
+  display: flex row center;
+
+}
 #app{
   background: 
     /* top, transparent red, faked with gradient */ 
