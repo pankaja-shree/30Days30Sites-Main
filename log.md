@@ -35,3 +35,8 @@ Today **I did**:  Restaurant Menu
 Today **I did**:  Book/Author
 **I learned:**  Learnt using bootstrap-vue. Using style-loader and css-loader for webpack-simple template projects to link css using javascript.
 **Link:** [Link to website](http://ahead-pipe.surge.sh/)
+
+### **Day 7:** 15.08.2017
+Today **I did**:  Trailer
+**I learned:**  Experimented with Animista.net. Learnt about vuescript.com which has showcases of vue reusable components.
+**Link:** [Link to website](http://ahead-pipe.surge.sh/)
