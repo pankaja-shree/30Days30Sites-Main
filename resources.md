@@ -19,6 +19,7 @@ Feel free to submit a pull request or contact me if you have resources you would
 [Text Shadow demos](http://cssdemos.tupence.co.uk/text-shadow.htm)
 [Animista](http://animista.net/play/text/pop-up/text-pop-up-top)
 http://www.vuescript.com/about/
+[vue-awesome icons](https://justineo.github.io/vue-awesome/demo/)
 
 ## Free Images
 [Vecteezy](https://www.vecteezy.com)  
