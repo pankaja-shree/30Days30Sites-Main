@@ -68,11 +68,11 @@ button{
   border-radius: 15px;
   color: #fff;
   padding: 1%;
+  transition: background-color 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 button:hover{
   color: black;
-  background: #fff;
-  transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background-color: #fff;
 }
 #app{
   background: 
