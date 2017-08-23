@@ -17,10 +17,14 @@
 			<section id="content1" class="tab-content">
         <h3>Buy Now</h3>
         <div class = "buttons">
-		      	<button>On DVD</button> <button>On Blu-Ray</button>
-            </div>
+		      	<button style = "font-size: 1.5em">On DVD</button> <button style = "font-size: 1.5em">On Blu-Ray</button>
+          </div>
         <h3>Follow us</h3>
 		      	<div class = "buttons">
+            <button><icon name="facebook" scale="2" label="facebook"></icon></button>
+            <button><icon name="twitter" scale="2" label="twitter"></icon></button>
+            <button><icon name="pinterest" scale="2" label="pinterest"></icon></button>
+            <button><icon name="instagram" scale="2" label="instagram"></icon></button>
             </div>
 			</section>
 
@@ -36,14 +40,17 @@
 				<Gallery></Gallery>
 			</section>
 
-      <footer></footer>
+      <app-footer></app-footer>
 	</div>
   </div>
 </template>
 
 <script>
+import 'vue-awesome/icons'
+import * as Icon from 'vue-awesome'
+
 import Gallery from './gallery.vue'
-import footer from './footer.vue'
+import Footer from './Footer.vue'
 export default {
   name: 'app',
   data () {
@@ -52,14 +59,17 @@ export default {
     }
   },
 	components:{
-		Gallery, footer
+    'icon': Icon,
+    'app-footer': Footer,
+    Gallery
 	}
 }
 </script>
 
 <style scoped>
 .buttons{
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 button{
   outline: none;
@@ -68,6 +78,7 @@ button{
   border-radius: 15px;
   color: #fff;
   padding: 1%;
+  margin: 1%;
   transition: background-color 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 button:hover{
