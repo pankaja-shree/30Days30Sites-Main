@@ -40,7 +40,6 @@
 				<Gallery></Gallery>
 			</section>
 
-      <app-footer></app-footer>
 	</div>
   </div>
 </template>
@@ -50,7 +49,6 @@ import 'vue-awesome/icons'
 import * as Icon from 'vue-awesome'
 
 import Gallery from './gallery.vue'
-import Footer from './Footer.vue'
 export default {
   name: 'app',
   data () {
@@ -60,7 +58,6 @@ export default {
   },
 	components:{
     'icon': Icon,
-    'app-footer': Footer,
     Gallery
 	}
 }
@@ -98,7 +95,7 @@ button:hover{
     margin: 0;
 		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 		background-size: cover;
-    height: 100vh;
+    height: 150vh;
   }
 *,
 *:after,
@@ -122,6 +119,7 @@ h1 {
 	color: white;
 	text-align: center;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding-top: 1%;
 }
 
 a {
@@ -132,9 +130,9 @@ a {
 
 /*Fun begins*/
 .tab_container {
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 40px;
 	position: relative;
 }
 
@@ -147,7 +145,7 @@ input, section {
 label {
   display: block;
   float: left;
-  width: 20%;
+  width: 25%;
   padding: 1.5em;
   cursor: pointer;
   text-decoration: none;
