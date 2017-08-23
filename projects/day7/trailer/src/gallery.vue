@@ -1,9 +1,9 @@
 <template>
 <div id = "Gallery">
 <swipe :options="swipeOptions">
-  <swipe-item><img src="./assets/img1.jpg"></swipe-item>
-  <swipe-item><img src="./assets/img3.jpg"></swipe-item>
-  <swipe-item><img src="./assets/img4.jpg"></swipe-item>
+  <swipe-item><div><img src="./assets/img1.jpg" /></div></swipe-item>
+  <swipe-item><div><img src="./assets/img3.jpg" /></div></swipe-item>
+  <swipe-item><div><img src="./assets/img4.jpg" /></div></swipe-item>
 </swipe>
 </div>
 </template>
