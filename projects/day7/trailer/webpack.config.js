@@ -34,14 +34,6 @@ module.exports = {
       {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ]
-      },
-      {
-        test: /vue-icons/,
-        loader: 'callback-loader',
-        enforce: 'post',
-        options: {
-          plugins: require('vue-icons/icon-loader')(['material-add', 'material-remove'])
-        }
       }
     ]
   },
