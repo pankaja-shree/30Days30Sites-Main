@@ -14,9 +14,6 @@
 			<input id="tab4" type="radio" name="tabs">
 			<label for="tab4"><span>Gallery</span></label>
 
-			<input id="tab5" type="radio" name="tabs">
-			<label for="tab5"><span>Legal</span></label>
-
 			<section id="content1" class="tab-content">
         <h3>Buy Now</h3>
         <div class = "buttons">
@@ -39,18 +36,6 @@
 				<Gallery></Gallery>
 			</section>
 
-			<section id="content5" class="tab-content">
-				<h3>Headline 5</h3>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		      	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		      	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</section>
       <footer></footer>
 	</div>
   </div>
@@ -74,8 +59,20 @@ export default {
 
 <style scoped>
 .buttons{
-  display: flex row center;
-
+  margin: 0 auto;
+}
+button{
+  outline: none;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  padding: 1%;
+}
+button:hover{
+  color: black;
+  background: #fff;
+  transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 #app{
   background: 
