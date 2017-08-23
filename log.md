@@ -38,5 +38,5 @@ Today **I did**:  Book/Author
 
 ### **Day 7:** 15.08.2017
 Today **I did**:  Trailer
-**I learned:**  Experimented with Animista.net. Learnt about vuescript.com which has showcases of vue reusable components.
-**Link:** [Link to website](http://ahead-pipe.surge.sh/)
+**I learned:**  Experimented with Animista.net. Learnt about vuescript.com which has showcases of vue reusable components. Used bootstrap carousel component. Learnt about props.
+**Link:** [Link to website]()
