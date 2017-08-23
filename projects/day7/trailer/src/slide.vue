@@ -1,5 +1,5 @@
 <template>
-<div id = "Gallery" class = "slides">
+<div id = "Slide">
   <div class="slides-inner">
     <div v-for="slide in slides">
     {{slide.src}}
@@ -10,14 +10,10 @@
 
 <script>
 export default {
-    name: 'Gallery',
+    name: 'Slide',
     data () {
       return {
-        slides: [
-          {src: './assets/img1.jpg'},
-          {src: './assets/img3.jpg'},
-          {src: './assets/img4.jpg'},
-        ]
+        
       }
     }
 }
