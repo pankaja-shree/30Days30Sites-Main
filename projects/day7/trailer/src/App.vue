@@ -83,18 +83,9 @@ button:hover{
   background-color: #fff;
 }
 #app{
-  background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(0,0,0,0.6), 
-      rgba(0,0,0,0.6)
-    ),
-    /* bg image */
-    url('./assets/img4.jpg');
-    opacity: 0.9;
-    margin: 0;
+  
 		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-		background-size: cover;
+		
     height: 150vh;
   }
 *,
