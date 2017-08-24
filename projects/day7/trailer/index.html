@@ -5,12 +5,22 @@
     <title>trailer</title>
     <style>
       body{
-        background: black;
+        background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0,0,0,0.5), 
+      rgba(0,0,0,0.5)
+    ),
+    /* bg image */
+    url('./dist/img4.jpg');
+    background-size: cover;
+    opacity: 0.9;
+    margin: 0;
       }
       </style>
   </head>
   <body>
     <div id="app"></div>
-    <script src="/dist/build.js"></script>
+    <script src="./dist/build.js"></script>
   </body>
 </html>
