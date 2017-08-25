@@ -53,7 +53,6 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   },
 	components:{
@@ -83,9 +82,7 @@ button:hover{
   background-color: #fff;
 }
 #app{
-  
 		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-		
     height: 150vh;
   }
 *,
@@ -110,7 +107,7 @@ h1 {
 	color: white;
 	text-align: center;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  padding-top: 1%;
+  padding-top: 2%;
 }
 
 a {
@@ -253,17 +250,33 @@ text-shadow:0 0 10px #fff, 0 0 20px #00d2ff, 0 0 30px #00d2ff, 0 0 40px #00d2ff,
 /*Media query*/
 @media only screen and (max-width: 930px) {
   label span {
-    font-size: 14px;
+    font-size: 2em;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  label span {
-    font-size: 0.7em;
+  h1{
+    padding:3%;
+    line-height: 1.5;
   }
-
+  label span {
+    font-size: 1.5em;
+    padding: 1%;
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+    margin:4%;
+  }
+  .buttons button{
+    font-size: 1.6em;
+    padding: 3%;
+  }
   .tab_container {
     width: 98%;
+  }
+  .tab-content h3{
+    padding-bottom: 3%;
   }
 }
 
